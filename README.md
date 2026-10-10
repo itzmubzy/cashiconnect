@@ -2,6 +2,8 @@
 
 ChasiConnect is a server-rendered agricultural collaboration and investment prototype for connecting farmers, landowners, and investors under an administrator-managed workflow. It supports land leasing, farmer verification, farming-project approval and funding, progress and harvest tracking, and transactional profit distribution.
 
+**Static showcase:** [itzmubzy.github.io/cashiconnect](https://itzmubzy.github.io/cashiconnect/) — a database-free, interactive presentation of the product and its workflows.
+
 > [!WARNING]
 > This repository is a development/academic prototype, not a production-ready financial platform. It includes predictable demo credentials and currently stores passwords as plain text. Read [Security and production readiness](docs/SECURITY.md) before exposing it to a network or using real personal or financial data.
 
@@ -155,6 +157,9 @@ cashiconnect/
 ├── views/                       # Shared or separated presentation templates
 ├── uploads/lands/               # Runtime land images; contents are ignored by Git
 ├── docs/                        # Architecture, DB, deployment, and security notes
+│   ├── index.html               # GitHub Pages static product showcase
+│   ├── static.css               # Showcase styling
+│   └── static.js                # Showcase interactions and calculator
 ├── _profit-distribution-helper.php
 ├── chasiConnect.sql             # Destructive development schema and seed data
 ├── db.php                       # Legacy connection compatibility entry point

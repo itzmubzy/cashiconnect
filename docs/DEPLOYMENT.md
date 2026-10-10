@@ -4,6 +4,19 @@
 
 ChasiConnect is suitable for local demonstrations and controlled development environments. Complete the production-readiness work in `SECURITY.md` before deploying it publicly or accepting real data or money.
 
+## Static GitHub Pages showcase
+
+The `docs/` directory also contains a database-free product showcase (`index.html`, `static.css`, `static.js`, and local image assets). It is safe for static hosting because it does not execute PHP, connect to MySQL, authenticate users, upload files, or process investments.
+
+To publish it with GitHub Pages:
+
+1. Open the repository's **Settings → Pages**.
+2. Choose **Deploy from a branch**.
+3. Select the default branch and the `/docs` directory.
+4. Save and wait for the Pages deployment to finish.
+
+The static site communicates product concepts only. Deploy the full PHP application separately using the server requirements below.
+
 ## Runtime requirements
 
 - PHP 8.0+ with `mysqli`, `mbstring`, sessions, and file-upload support.
