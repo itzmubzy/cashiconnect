@@ -1,0 +1,42 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+config.local.php
+
+# Runtime-generated content
+/uploads/lands/*
+!/uploads/lands/.gitkeep
+/logs/
+/tmp/
+/cache/
+*.log
+
+# Dependency and build output
+/vendor/
+/node_modules/
+/dist/
+/build/
+
+# Test/tool caches
+/.phpunit.cache/
+/.phpunit.result.cache
+/.php-cs-fixer.cache
+/.cache/
+/coverage/
+
+# IDE and operating-system metadata
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+__MACOSX/
+
+# Local database and backup files
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.bak
+*.backup

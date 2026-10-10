@@ -1,0 +1,376 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px 24px 22px;
+    box-sizing: border-box;
+}
+
+.image-box
+{
+    width: min(100%, 1050px);
+    height: min(540px, calc(100vh - 100px));
+    min-height: 470px;
+    margin: 0 auto;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.image-box > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.login-form
+{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(340px, calc(100% - 32px));
+    padding: 24px;
+    box-sizing: border-box;
+    color: #1f2937;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.site-logo
+{
+    width: 220px;
+    height: 112px;
+    object-fit: contain;
+    display: block;
+    margin: -4px auto -2px;
+}
+
+label
+{
+    display: block;
+    margin: 16px 0 8px;
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+small
+{
+    color: #6b7280;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    width: 100%;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    color: #111827;
+    background: #f9fafb;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus
+{
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.22);
+}
+
+.form-actions
+{
+    display: flex;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+input[type="submit"]
+{
+    flex: 1;
+    padding: 13px 20px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.registration-button
+{
+    flex: 1;
+    padding: 13px 12px;
+    border-radius: 8px;
+    color: white;
+    background-color: #059669;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover,
+.registration-button:hover
+{
+    opacity: 0.88;
+}
+
+.error-message
+{
+    display: block;
+    color: white;
+    margin-top: 18px;
+    min-height: 18px;
+    color: #fca5a5;
+    font-size: 13px;
+    text-align: center;
+}
+
+.copyright
+{
+    margin: 18px 0 0;
+    color: #9ca3af;
+    font-size: 13px;
+    text-align: center;
+}
+
+.registration-page
+{
+    background-color: white;
+}
+
+.registration-box
+{
+    width: min(100%, 1050px);
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.registration-box > img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.registration-form
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(420px, calc(100% - 32px));
+    max-height: calc(100% - 24px);
+    padding: 12px 20px 14px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.registration-logo
+{
+    width: 155px;
+    height: 76px;
+    display: block;
+    object-fit: contain;
+    margin: -4px auto 0;
+}
+
+.registration-form h2
+{
+    margin: 0 0 8px;
+    color: #1f2937;
+    font-size: 22px;
+    text-align: center;
+}
+
+.registration-form label
+{
+    margin: 9px 0 5px;
+}
+
+.registration-form input:not([type="submit"])
+{
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.registration-form select
+{
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    color: #111827;
+    background: #f9fafb;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.registration-form .register-button
+{
+    width: 100%;
+    margin-top: 14px;
+    padding: 11px 18px;
+}
+
+.registration-message
+{
+    min-height: 18px;
+    margin: 12px 0 4px;
+    color: #047857;
+    font-size: 13px;
+    text-align: center;
+}
+
+.back-link
+{
+    display: block;
+    color: #2563eb;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.role-page
+{
+    min-height: 100vh;
+    background-color: white;
+}
+
+.role-card
+{
+    width: min(520px, calc(100% - 32px));
+    padding: 28px;
+    box-sizing: border-box;
+    color: #1f2937;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.role-logo
+{
+    width: 180px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.role-card h1
+{
+    margin: 4px 0 8px;
+    color: #1f2937;
+    font-size: 30px;
+}
+
+.role-welcome
+{
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.logout-link
+{
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    color: white;
+    background-color: #dc2626;
+    text-decoration: none;
+}
+
+.admin-card
+{
+    width: min(720px, calc(100% - 32px));
+}
+
+.admin-card table
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.admin-card th,
+.admin-card td
+{
+    padding: 9px;
+    border: 1px solid #d1d5db;
+    text-align: left;
+}
+
+.admin-card th
+{
+    color: white;
+    background-color: #2563eb;
+}
+
+@media (max-width: 600px)
+{
+    body
+    {
+        padding: 12px;
+    }
+
+    .image-box
+    {
+        height: calc(100vh - 70px);
+        min-height: 470px;
+        border-radius: 15px;
+    }
+
+    .login-form
+    {
+        padding: 12px 18px 18px;
+    }
+
+    .registration-form
+    {
+        top: 50%;
+        padding: 10px 16px 12px;
+    }
+
+    .registration-box > img
+    {
+        object-fit: contain;
+        background-color: #e5e7eb;
+    }
+
+    .registration-box
+    {
+        height: 600px;
+        aspect-ratio: auto;
+    }
+}
